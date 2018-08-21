@@ -1,6 +1,7 @@
 .DS_Store
 node_modules
 /dist
+vue-web-components-tutorial.iml
 
 # local env files
 .env.local
