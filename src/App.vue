@@ -1,16 +1,27 @@
 <template>
-  <div id="app">
-    <be-media src="https://random.dog/29c13d4e-9bec-45db-98b4-5b8df0f4dd95.png"/>
+  <div id="app" class="container">
+    <div class="row">
+      <div class="col-6">
+        <be-dog class="img-fluid"/>
+      </div>
+      <div class="col-6">
+        <be-cat class="img-fluid"/>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import BeMedia from './components/BeMedia.vue';
+import BeDog from './components/BeDog.vue';
+import BeCat from './components/BeCat.vue';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 @Component({
   components: {
-    BeMedia,
+    BeDog,
+    BeCat,
   },
 })
 export default class App extends Vue {}
